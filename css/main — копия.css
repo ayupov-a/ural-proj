@@ -31,24 +31,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #3b2f58;
     text-align: center;
 }
-.main{
-    flex: 0 0 auto;
-}
-.settings{
-    display: flex;
-    justify-content: space-between;
-}
-.cat-select, .btn{
-    border-radius: 10px;
-    height: 55px;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-}
-.cat-form{
+.sign-form{
     padding-top: 30px;
-    width: 500px;
+    width: 800px;
+    margin: 0 auto;
 }
-input[type=text]{
+input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -56,11 +44,15 @@ input[type=text]{
     border: none;
     background: #f1f1f1;
 }
-input[type=text]:focus{
+input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
-.btn {
+hr {
+    border: 0.1px solid #3b2f58;
+    margin-bottom: 25px;
+}
+.registerbtn {
     background-color: #3b2f58;
     color: white;
     padding: 16px 20px;
@@ -71,17 +63,17 @@ input[type=text]:focus{
     opacity: 0.9;
     transition: all 0.3s ease;
 }
-.btn:hover{
+.registerbtn:hover{
     opacity: 1;
 }
-input[type=submit] {
+input[type=button] {
     font-family: 'Montserrat' sans-serif;
 }
-.stat-table{
-    font-size: 14px;
-    border-collapse: collapse;
+a{
+    color: dodgerblue;
+}
+.signin{
     text-align: center;
-    margin-top: 30px;
 }
 .wrapper{
     min-height: 100vh;
@@ -90,23 +82,5 @@ input[type=submit] {
 }
 .footer{
     margin-top: auto;
-    box-shadow: 4px 6px 8px 0 #000;
-}
-
-th, td:first-child {
-    background: #3b2f58;
-    color: white;
-    padding: 10px 20px;
-}
-th, td {
-    border-style: solid;
-    border-width: 0 1px 1px 0;
-    border-color: white;
-}
-td {
-    background: #D8E6F3;
-}
-th:first-child, td:first-child {
-    text-align: left;
 }
 
